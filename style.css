@@ -5,5 +5,36 @@
   margin: 0;
   padding: 0;
 }
-body {
+html {
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Popins", sans-serif;
+  overflow-x: hidden;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.img-box {
+  height: 800px;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content-box {
+  padding-inline: 10em;
+}
+.title {
+  font-size: 5em;
+  max-width: max-content;
+  margin-block-end: 0.25em;
+}
+.text {
+  opacity: 0.6;
+  line-height: 2.25em;
 }
