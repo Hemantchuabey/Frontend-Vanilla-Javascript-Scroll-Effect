@@ -16,3 +16,4 @@ const scrollReveal = function () {
 };
 
 window.addEventListener("scroll", scrollReveal);
+window.addEventListener("load", scrollReveal);
