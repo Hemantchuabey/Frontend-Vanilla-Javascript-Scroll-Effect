@@ -38,3 +38,36 @@ html {
   opacity: 0.6;
   line-height: 2.25;
 }
+
+[data-reveal="left"] {
+  clip-path: inset(0 100% 0 0);
+}
+
+[data-reveal="left"].reveal {
+  animation: revealLeft 1.25s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes revealLeft {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[data-reveal="right"] {
+  clip-path: inset(0 0 0 100%);
+}
+[data-reveal="right"].reveal {
+  animation: revealRight 1.25s cubic-bezier(0.17, 0.97, 0.38, 1) forwards 300ms;
+}
+
+@keyframes revealRight {
+  0% {
+    clip-path: inset(0 0 0 100%);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
